@@ -17,7 +17,8 @@ module.exports = robot => {
     try {
       const res = await context.github.search.issues({q: `is:pr+repo:${owner}/${repo}+author:${author}`});
       if (res.data.total_count === 0) {
-        const body = 'Hey! We\'ve noticed this is your first pull request on this repo, welcome & congrats!';
+        const body = 'Hey! I\'ve noticed that this is your first pull request on this repo. ' +
+          'The project team would like to extend a sincere **Welcome & Congrats!** :blush::wave:';
         context.github.issues.createComment({repo, number, owner, body});
         console.log('SUCCESS: Comment has been succesfully posted.');
       }
