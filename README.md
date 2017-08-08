@@ -20,5 +20,9 @@ npm start
 
 See [docs/deploy.md](docs/deploy.md) if you would like to run your own instance of this plugin.
 
+## Contributing
+
+If you are interested in contributing to this project, check out the [Contributing Guide](CONTRIBUTING.md).
+
 [probot-welcome-logo]: docs/images/probot-welcome-xs.png
 [probot-welcome-example]: docs/images/probot-welcome-example.png
